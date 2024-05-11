@@ -1,10 +1,10 @@
-function openYoutube() {
-    chrome.storage.local.set({ youtubeVisitAllowed: true }, () => {
-        return window.location.href = 'https://www.youtube.com';
+function openGluo {
+    chrome.storage.local.set({ gluoVisitAllowed: true }, () => {
+        return window.location.href = 'https://www.gluo.xyz';
     });
 }
 
-document.getElementById('openYoutube').addEventListener('click', openYoutube);
+document.getElementById('openGluo').addEventListener('click', openGluo);
 
 function closeTab() {
     return window.close();
